@@ -37,6 +37,7 @@ function scrollComments(){
         if (countComments == 0) return;
 
         $("body").append(arrowsArea);
+        $("#arrowsArea").css("top", $(window).height()/2 - 100);
         $("#countComments").html(curComment + 1 + " из " + countComments);
 
         $("#commentsScrollerUp, #commentsScrollerDown").hover(
